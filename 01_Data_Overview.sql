@@ -6,6 +6,7 @@ from social
 group by gender
 -- The gender distribution is nearly balanced, with a slight predominance of male students (49 more males than females).
 
+  
 -- Academic Level Distribution
 select
 academic_level
@@ -15,6 +16,7 @@ group by 1
 -- Undergraduate students represent the largest group (712 records), followed by Graduate students (632 records). 
 -- High School students form the smallest segment of the dataset (352 records).
 
+  
 -- Most Popular Social Media Platforms
 select
 most_used_platform
@@ -24,6 +26,7 @@ group by 1
 order by 2 desc
 -- Instagram is the most frequently used social media platform in the dataset.
 
+  
 -- Age Distribution
 select
 age

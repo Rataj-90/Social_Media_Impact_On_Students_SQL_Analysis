@@ -1,4 +1,3 @@
-
 -- Do Heavy Users Sleep Less?
 select
 case

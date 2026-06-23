@@ -2,7 +2,9 @@
 select 
 round(avg(avg_daily_usage_hours),1)
 from social
+-- The average daily social media usage across all students is 5.1 hours per day
 
+  
 -- Which platform has the highest average daily usage?
 select 
 most_used_platform
@@ -12,6 +14,7 @@ group by 1
 order by 2 desc
 -- WhatsApp has the highest average daily usage per user.
 
+  
 -- Which platform accounts for the highest total usage time?
 select
 most_used_platform
@@ -21,6 +24,7 @@ group by 1
 order by 2 desc
 -- Instagram accounts for the highest total usage time in the dataset.
 
+  
 -- Social media preferences differ by gender.
 select
 gender

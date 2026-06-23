@@ -75,4 +75,3 @@ Among all educational levels, High School students spend the most time on social
 # Insight 3 – Platform popularity does not necessarily translate into the highest user engagement
 
 Instagram is the most popular platform in the dataset and attracts the largest number of Heavy Users. However, WhatsApp records the highest average daily usage per user. This indicates that the platform with the largest user base is not always the one generating the highest level of engagement, highlighting an important distinction between popularity and usage intensity.
-<img width="925" height="425" alt="image" src="https://github.com/user-attachments/assets/5cac1792-a6da-4d97-afbd-ffd68b5c3f44" />

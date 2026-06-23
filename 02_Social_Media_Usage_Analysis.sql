@@ -1,35 +1,33 @@
--- Gender Distribution
-select
-gender
-,count(gender)
+-- What is the average daily social media usage?
+select 
+round(avg(avg_daily_usage_hours),1)
 from social
-group by gender
--- The gender distribution is nearly balanced, with a slight predominance of male students (49 more males than females).
 
--- Academic Level Distribution
-select
-academic_level
-,count(academic_level)
+-- Which platform has the highest average daily usage?
+select 
+most_used_platform
+,round(avg(avg_daily_usage_hours),1)
 from social
 group by 1
--- Undergraduate students represent the largest group (712 records), followed by Graduate students (632 records). 
--- High School students form the smallest segment of the dataset (352 records).
+order by 2 desc
+-- WhatsApp has the highest average daily usage per user.
 
--- Most Popular Social Media Platforms
+-- Which platform accounts for the highest total usage time?
 select
 most_used_platform
+,round(sum(avg_daily_usage_hours)/24,1) as count_in_days
+from social
+group by 1 
+order by 2 desc
+-- Instagram accounts for the highest total usage time in the dataset.
+
+-- Social media preferences differ by gender.
+select
+gender
+,most_used_platform
 ,count(most_used_platform)
 from social
-group by 1
-order by 2 desc
--- Instagram is the most frequently used social media platform in the dataset.
-
--- Age Distribution
-select
-age
-,count(age)
-from social
-group by 1
-order by 2 desc
--- The dataset includes students aged between 19 and 24 years.
--- The most represented age group is 21 years old, while 24-year-old students are the least represented.
+group by 2,1
+order by 3 desc
+-- Instagram is the most popular platform among female students,
+-- whereas Facebook is the most popular platform among male students.

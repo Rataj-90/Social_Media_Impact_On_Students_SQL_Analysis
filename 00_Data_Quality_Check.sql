@@ -3,9 +3,9 @@ Select
 count(*) 					as total_records
 ,count(distinct Student_ID)	as unique_students
 From social
-
 -- Result: 1705 total records and 1000 unique Student_ID values
 
+  
 -- Check how many times each Student_ID appears
 Select
 Student_ID
@@ -23,9 +23,9 @@ From social
 Group by Student_ID
 Having count(*) = 2
 ) duplicated_students
-
 -- Result: 705 Student_ID values appear exactly twice 
 
+  
 -- Review duplicate Student_ID records
 Select *
 From social

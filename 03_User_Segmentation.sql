@@ -12,6 +12,7 @@ group by User_group
 -- Light users sleep an average of 8.0 hours per night,
 -- compared to 5.4 hours among heavy users.
 
+  
 -- Do Heavy Users Have Lower Mental Health Scores?
 select
 case
@@ -25,6 +26,7 @@ group by User_group
 -- Heavy users report the lowest average Mental Health Score (5.0),
 -- compared to medium users (6.6) and light users (8.0).
 
+  
 -- Do Heavy Users Report Academic Impact More Frequently?
 select
 case
@@ -60,6 +62,7 @@ having user_group = 'Heavy'
 order by number_of_users desc
 -- The analysis shows that Instagram is the most popular platform among heavy users, accounting for 106 users in the dataset.
 
+  
 -- Which Academic Level Has the Highest Proportion of Heavy Users?
 select
 academic_level
